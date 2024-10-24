@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Farming Agent</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Soil Farming Agent</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner and Scrolling Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Welcome to Soil Farming Agent</h1>
+            <p>Your go-to solution for managing soil and crop information.</p><br>
+            <div class="card">
+                <h2>Soil Types & Testing</h2>
+                <ul>
+                    <li><strong>Yellow Soil:</strong> Contains iron oxides,good for wheat and maize.</li>
+                    <li><strong>Black Soil:</strong> Rich in nutrients, suitable for cereals.</li>
+                    <li><strong>Laterite Soil:</strong> Rich in iron , great for most crops.</li>
+                    <li><strong>Peaty Soil:</strong> High organic matter, perfect for growing vegetables.</li>
+                </ul>
+            </div>
+            <a href="https://adccbc8e97901e8bbc.gradio.live/" class="btn">Soil Analysis</a>
+        </div>
+
+        <!-- Scrolling Details Section -->
+        <div class="scrolling-details">
+            <h3>Additional Soil Information</h3>
+            <div class="scrolling-card">
+                <p><strong>Soil pH:</strong> Ideal range for crops is 6.0-7.5.</p>
+                <p><strong>Soil Moisture:</strong> Check moisture levels regularly for optimal crop growth.</p>
+                <p><strong>Organic Matter:</strong> Helps retain soil moisture and nutrients.</p>
+                <p><strong>Soil Texture:</strong> Affects water retention and aeration.</p>
+                <p><strong>Soil Erosion:</strong> Prevent through cover crops and no-till farming.</p>
+                <p><strong>Soil Fertility:</strong> Enhance with organic fertilizers and compost.</p>
+                <p><strong>Compaction:</strong> Aerate compacted soil to improve root growth.</p>
+                <p><strong>Soil Drainage:</strong> Poor drainage can lead to root rot.</p>
+                <p><strong>Soil Testing:</strong> Test soil every few years to monitor nutrient levels.</p>
+                <p><strong>Soil Structure:</strong> Healthy structure promotes water infiltration.</p>
+                <p><strong>Soil Conservation:</strong> Practices to maintain soil health and prevent degradation.</p>
+                <p><strong>Crop Rotation:</strong> Helps prevent nutrient depletion and pest buildup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-item">
+                <h3>Soil Analysis</h3>
+                <img src="assets/images/soil-type1.jpg" alt="Soil Analysis" class="service-img">
+                <a href="soil-analysis.html" class="details-btn">View Details</a>
+            </div>
+            <div class="service-item">
+                <h3>Crop Recommendations</h3>
+                <img src="assets/images/soil-type2.jpg" alt="Crop Recommendations" class="service-img">
+                <a href="crop-recommendations.html" class="details-btn">View Details</a>
+            </div>
+            <div class="service-item">
+                <h3>Distributor Details</h3>
+                <img src="assets/images/distributor1.jpg" alt="Distributor Details" class="service-img">
+                <a href="distributor-details.html" class="details-btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="container">
+            <form id="contactForm">
+                <div class="alert" style="display: none;">Your message was sent successfully!</div>
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name...." required />
+                </div>
+                <div class="inputBox">
+                    <input type="email" id="emailid" placeholder="Your Email....." required />
+                </div>
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message" required></textarea>
+                </div>
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <img src="assets/images/soil-hero.jpg" alt="Soil Hero" class="about-img">
+        <p>We provide detailed information about soil types and their best-suited crops. Our platform helps you understand the characteristics of different soil types to make informed decisions for optimal crop growth.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Soil Farming Agent. All rights reserved.</p>
+    </footer>
+
+    <!-- Firebase and custom scripts -->
+    <script src="scripts/firebase-config.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>
