@@ -1,0 +1,165 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner styles */
+.banner {
+    padding: 50px;
+    background: #a2d5a9; /* Updated color to match your preference */
+    text-align: center;
+}
+
+.banner-content h1 {
+    margin: 0;
+}
+
+/* Scrolling Details Section */
+.scrolling-details {
+    overflow-y: auto;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    animation: slideIn 1.5s ease-in-out; /* Added animation */
+}
+
+.scrolling-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scrolling-details li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.scrolling-details li:last-child {
+    border-bottom: none;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.inputBox {
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.details-btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for Banner Content */
+.banner-content {
+    animation: fadeIn 1.5s ease-in-out; /* Added animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
